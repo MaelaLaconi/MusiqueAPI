@@ -8,10 +8,10 @@ public class Musique {
     private int id;
     private String chanteur;
 
-    public Musique(int id, String name, String chanteur) {
-        this.name = name;
-        this.id = id;
-        this.chanteur = chanteur;
+    public Musique() {
+        this.name = "";
+        this.id = 0;
+        this.chanteur = "";
     }
 
     public String getName() {

@@ -12,13 +12,37 @@ public class MusiqueDAO implements IMusiqueDAO{
     private Musique savedMusique;
 
     public MusiqueDAO() {
-        savedMusique = new Musique(1, "Add it up", "Violent Femmes");
+        Musique m1 = new Musique();
+        m1.setChanteur("Violent Femmes");
+        m1.setName("Add it up");
+        m1.setId(1);
+        savedMusique = m1; // save a default musique
         musiques = new ArrayList<>();
-        musiques.add(new Musique(1, "Add it up", "Violent Femmes"));
-        musiques.add(new Musique(2, "Anonymous", "Saltriver"));
-        musiques.add(new Musique(3, "Cendres", "MPL"));
-        musiques.add(new Musique(4, "Crawl", "Kings of Leon"));
-        musiques.add(new Musique(5, "Dead Sea", "The Lumineers"));
+        musiques.add(m1);
+
+        m1 = new Musique();
+        m1.setChanteur("Saltriver");
+        m1.setName("Anonymous");
+        m1.setId(2);
+        musiques.add(m1);
+
+        m1 = new Musique();
+        m1.setChanteur("MPL");
+        m1.setName("Cendres");
+        m1.setId(3);
+        musiques.add(m1);
+
+        m1 = new Musique();
+        m1.setChanteur("Kings of Leon");
+        m1.setName("Crawl");
+        m1.setId(4);
+        musiques.add(m1);
+
+        m1 = new Musique();
+        m1.setChanteur("The Lumineers");
+        m1.setName("Dead Sea");
+        m1.setId(5);
+        musiques.add(m1);
 
     }
 
