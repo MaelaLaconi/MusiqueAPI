@@ -1,7 +1,5 @@
 package masteril.example.musique.model;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.Objects;
 
 public class Musique {
